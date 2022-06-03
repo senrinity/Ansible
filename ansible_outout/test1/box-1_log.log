@@ -1,0 +1,9 @@
+labs 35a6189c7b3f
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  15412  9452 pts/0    Ss+  20:06   0:00 sshd: /usr/sbin
+root        55  1.5  0.0  17132 10772 ?        Ss   20:12   0:00 sshd: daniil [p
+daniil      67  0.5  0.0  17660  8700 ?        R    20:12   0:00 sshd: daniil@pt
+daniil     172  0.0  0.0   2884  1004 pts/1    Ss+  20:12   0:00 sh -c /bin/sh -
+daniil     173  0.0  0.0   2884   976 pts/1    S+   20:12   0:00 /bin/sh -c  /ho
+daniil     174  0.0  0.0   2884   952 pts/1    S+   20:12   0:00 /bin/sh /home/d
+daniil     176  0.0  0.0   7740  3324 pts/1    R+   20:12   0:00 ps -aux
