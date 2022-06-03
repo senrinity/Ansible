@@ -1,0 +1,32 @@
+#https://www.8host.com/blog/ustanovka-i-nastrojka-ansible-v-ubuntu-18-04/
+
+#docker exec src-task-client-1 cat "/etc/ansible/hosts" 1>hosts
+
+services:  
+
+  ansible-server:
+    tty: true
+    build: 
+            dockerfile: ansibleServer.Dockerfile
+    volumes:
+      - ./mnt:/mnt
+      - ./ansible_outout:/home/output
+    environment:
+      - ANSIBLE_HOST_KEY_CHECKING=False
+
+    #command: 'ansible -m ping all'
+
+  box-1:
+    tty: true
+    build: 
+            dockerfile: ansibleClient.Dockerfile
+
+
+  box-2:
+    tty: true
+    build: 
+            dockerfile: ansibleClient.Dockerfile
+
+
+networks:
+  default:
